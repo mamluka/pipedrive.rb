@@ -6,6 +6,7 @@ module Pipedrive
       start = params[:start] || 0
       loop do
         res = __send__(method, *args, params.merge(start: start))
+
         break if !res.try(:data) || !res.success?
         res.data.each do |item|
           yield item

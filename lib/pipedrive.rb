@@ -90,3 +90,6 @@ require 'pipedrive/file'
 
 # Notes
 require 'pipedrive/note'
+
+
+require 'pipedrive/pipeline'
